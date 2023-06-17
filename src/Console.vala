@@ -17,11 +17,11 @@ namespace Ensembles {
             ERROR,
         }
 
-        public void greet (string app_version, string display_version) {
+        public static void greet (string app_version, string display_version) {
             new Greeter (app_version, display_version).print_greetings ();
         }
 
-        public void log<T> (T object, LogLevel log_level = LogLevel.TRACE) {
+        public static void log<T> (T object, LogLevel log_level = LogLevel.TRACE) {
             DateTime date_time = new DateTime.now_utc ();
             string message = "";
             if (typeof (T) == Type.STRING) {

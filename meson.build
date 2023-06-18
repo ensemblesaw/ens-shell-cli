@@ -27,8 +27,8 @@ dependencies = [
 
 subdir ('src')
 
-# Define shared library
-libens_tui_shell = shared_library (
+# Define library
+libens_tui_shell = static_library (
     meson.project_name () + '-' + meson.project_version().split('.')[0],
     sources,
     dependencies: dependencies,

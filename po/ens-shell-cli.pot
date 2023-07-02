@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the ens-tui-shell package.
+# This file is distributed under the same license as the ens-shell-cli package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: ens-tui-shell\n"
+"Project-Id-Version: ens-shell-cli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 11:58+0530\n"
+"POT-Creation-Date: 2023-07-02 18:08+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/Greetings.vala:23
-#, c-format
-msgid "VERSION: %s, DISPLAY VERSION: %s   |   (c) SUBHADEEP JASU 2020 - 2023\n"
+#: src/Greetings.vala:24
+msgid "VERSION"
+msgstr ""
+
+#: src/Greetings.vala:26
+msgid "DISPLAY VERSION"
 msgstr ""

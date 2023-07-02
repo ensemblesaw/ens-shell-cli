@@ -20,8 +20,13 @@ namespace Ensembles._Console {
             print (Format.RED);
             print ("============================================================================\n");
             print (Format.YEL);
-            print (_("VERSION: %s, DISPLAY VERSION: %s   |   (c) SUBHADEEP JASU 2020 - 2023\n"),
-             app_version, display_version);
+            print ("%s: %s, %s: %s   |   (c) %s %s\n",
+            _("VERSION"),
+            app_version,
+            _("DISPLAY VERSION"),
+            display_version,
+            "SUBHADEEP JASU",
+            "2020 - 2023");
             print (Format.RED);
             print ("----------------------------------------------------------------------------\n");
             print (Format.RESET);

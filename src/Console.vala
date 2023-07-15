@@ -22,6 +22,7 @@ namespace Ensembles {
         }
 
         public static void log<T> (T object, LogLevel log_level = LogLevel.TRACE) {
+            Intl.setlocale (LocaleCategory.ALL, "");
             DateTime date_time = new DateTime.now_utc ();
             string message = "";
             if (typeof (T) == Type.STRING) {
@@ -54,7 +55,7 @@ namespace Ensembles {
                 }
                 break;
                 case ERROR:
-                print ("%s▎%s%sERROR %s[%s%s%s]: %s%s%s\n", Format.RED, Format.WHT, Format.BOLD, Format.RESET, Format.BLU, date_time.to_string (),
+                print ("%s▎%s%sERROR   %s[%s%s%s]: %s%s%s\n", Format.RED, Format.WHT, Format.BOLD, Format.RESET, Format.BLU, date_time.to_string (),
                     Format.RESET, Format.RED, message, Format.RESET);
                 GLib.log (domain, LogLevelFlags.LEVEL_ERROR, message);
                 break;

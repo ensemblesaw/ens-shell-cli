@@ -18,6 +18,7 @@ namespace Ensembles {
         }
 
         public static void greet (string app_version, string display_version) {
+            Intl.setlocale (LocaleCategory.ALL, "");
             new Greeter (app_version, display_version).print_greetings ();
         }
 

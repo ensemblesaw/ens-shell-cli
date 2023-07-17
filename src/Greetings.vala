@@ -11,25 +11,25 @@ namespace Ensembles._Console {
         }
 
         public void print_greetings () {
-            print (Format.MAG);
-            print ("███████ ███    ██ ███████ ███████ ███    ███ ██████  ██      ███████ ███████\n");
-            print ("██      ████   ██ ██      ██      ████  ████ ██   ██ ██      ██      ██\n");
-            print ("█████   ██ ██  ██ ███████ █████   ██ ████ ██ ██████  ██      █████   ███████\n");
-            print ("██      ██  ██ ██      ██ ██      ██  ██  ██ ██   ██ ██      ██           ██\n");
-            print ("███████ ██   ████ ███████ ███████ ██      ██ ██████  ███████ ███████ ███████\n");
-            print (Format.RED);
-            print ("============================================================================\n");
-            print (Format.YEL);
-            print ("%s: %s, %s: %s   |   (c) %s %s\n",
+            stdout.printf (Format.MAG);
+            stdout.printf ("███████ ███    ██ ███████ ███████ ███    ███ ██████  ██      ███████ ███████\n");
+            stdout.printf ("██      ████   ██ ██      ██      ████  ████ ██   ██ ██      ██      ██\n");
+            stdout.printf ("█████   ██ ██  ██ ███████ █████   ██ ████ ██ ██████  ██      █████   ███████\n");
+            stdout.printf ("██      ██  ██ ██      ██ ██      ██  ██  ██ ██   ██ ██      ██           ██\n");
+            stdout.printf ("███████ ██   ████ ███████ ███████ ██      ██ ██████  ███████ ███████ ███████\n");
+            stdout.printf (Format.RED);
+            stdout.printf ("============================================================================\n");
+            stdout.printf (Format.YEL);
+            stdout.printf ("%s: %s, %s: %s   |   (c) %s %s\n",
             _("VERSION"),
             app_version,
             _("DISPLAY VERSION"),
             display_version,
             "SUBHADEEP JASU",
             "2020 - 2023");
-            print (Format.RED);
-            print ("----------------------------------------------------------------------------\n");
-            print (Format.RESET);
+            stdout.printf (Format.RED);
+            stdout.printf ("----------------------------------------------------------------------------\n");
+            stdout.printf (Format.RESET);
         }
     }
 }

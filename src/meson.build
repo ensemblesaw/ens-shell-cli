@@ -1,5 +1,6 @@
 sources = files (
     'Console.vala',
     'Greetings.vala',
-    'Format.vala'
+    'Format.vala',
+    'Printable.vala'
 )

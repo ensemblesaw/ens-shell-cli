@@ -27,11 +27,26 @@ namespace Ensembles {
             }
         }
 
+        /**
+         * Show the app greetings message with copyright notice.
+         *
+         * @param app_version release version of the app
+         * @param display_version friendly version of the app
+         */
         public static void greet (string app_version, string display_version) {
             init ();
             new Greeter (app_version, display_version).print_greetings ();
         }
 
+        /**
+         * Log a message to console of type `T`.
+         *
+         * @param object the object could be a string, error or a `Printable`
+         * @param log_level the `LogLevel` which the log should be of
+         * @param line the line number from where `log` is called. use `Log.LINE`
+         * @param function_name the function which calls `log`. Use `Log.METHOD`
+         * @param file_name the file where `log` is called. Use `Log.FILE`
+         */
         public static void log<T> (
             T object,
             LogLevel log_level = LogLevel.TRACE,

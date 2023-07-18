@@ -72,6 +72,8 @@ namespace Ensembles {
                 .replace ("-", " ")
                 .up ();
                 message += ": " + ((Error) object).message;
+            } else if (object is Printable) {
+                message = ((Printable) object).to_string();
             }
 
             string log_message = "";

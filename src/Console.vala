@@ -54,7 +54,7 @@ namespace Ensembles {
             string? function_name = Log.METHOD,
             string? file_name = Log.FILE
         ) {
-            var _verbose = verbose || Log.get_debug_enabled ();
+            var _verbose = verbose || Log.get_debug_enabled () || Environment.get_variable ("G_MESSAGES_DEBUG") == "all";
 
             // If the log level is not TRACE or WARNING and verbose if off, then donot print
             if (!_verbose && (log_level == LogLevel.TRACE || log_level == LogLevel.WARNING)) {

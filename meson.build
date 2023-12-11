@@ -9,6 +9,9 @@ project (
 # Translation module
 i18n = import ('i18n')
 
+# Package Config
+pkg = import('pkgconfig')
+
 # Project arguments
 add_project_arguments (
     '-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name ()),
@@ -40,4 +43,8 @@ ens_shell_cli_dep = declare_dependency (
     dependencies: dependencies,
     include_directories: include_directories('.'),
     link_with: libens_shell_cli
+)
+
+ens_shell_cli_pc = pkg.generate(
+    libens_shell_cli
 )

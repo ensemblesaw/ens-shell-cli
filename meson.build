@@ -33,8 +33,7 @@ libens_shell_cli = static_library (
     meson.project_name () + '-' + meson.project_version().split('.')[0],
     sources,
     dependencies: dependencies,
-    install: true,
-    install_dir: [true, true, true]
+    install: true
 )
 
 subdir ('po')
